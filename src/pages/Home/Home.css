@@ -1,0 +1,6 @@
+.left-container {
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  background-color: #7c3c3c;
+}
