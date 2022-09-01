@@ -2,7 +2,7 @@
 import './App.css';
 import {default as routes} from './routes/route'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import "antd/dist/antd.css";
+import "antd/dist/antd.min.css";
 // import Home from './pages/Home/Home';
 
 function App() {

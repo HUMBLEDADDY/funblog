@@ -1,6 +1,6 @@
 import React from 'react'
 import LeftContainer from './LeftContainer'
-import { Layout,Button } from 'antd';
+import { Layout } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 
 function Home() {
