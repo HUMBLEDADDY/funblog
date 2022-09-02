@@ -1,7 +1,7 @@
 import Home from '../pages/Home/Home'
 
 const routes = [{
-    path:'/Home',
+    path:'/',
     component: <Home/>
 }
 ]

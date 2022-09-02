@@ -7,14 +7,14 @@ function Home() {
     return(
         <div>
             <Layout>
-                <Header>Header</Header>
+                <Sider>
+                    <LeftContainer></LeftContainer>
+                </Sider>
                 <Layout>
-                    <Sider>
-                        <LeftContainer></LeftContainer>
-                    </Sider>
+                    <Header>Header</Header>
                     <Content>Content</Content>
+                    <Footer>Footer</Footer>
                 </Layout>
-                <Footer>Footer</Footer>
             </Layout>
         </div>
     )
