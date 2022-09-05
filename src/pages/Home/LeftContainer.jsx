@@ -8,7 +8,7 @@ import avatar from '../../assets/img/avatar.jpg'
 function LeftContainer() {
     const defaultSlogan = 'May the force be with you'
 
-    const [typing, setTyping] = useState(true);
+    const [typing, setTyping] = useState(false);
 
     const [slogan, setSlogan] = useState(defaultSlogan);
 
@@ -20,23 +20,30 @@ function LeftContainer() {
             if(!typing){
                 if(slogan === ''){
                     setTyping(true)
-                    setSlogan(defaultSlogan);
+                    // setSlogan(defaultSlogan);
                 }
-                const letters = slogan.split('');
-                letters.pop()
-                const slogan_ = letters.join('')
-                setSlogan(slogan_);
+                else{
+                    const letters = slogan.split('');
+                    letters.pop()
+                    const slogan_ = letters.join('')
+                    setSlogan(slogan_);
+                }
             }
-        },100)
+        },50)
         spelling = setInterval(()=>{
             if(typing){
+                console.log(slogan)
                 if(slogan === defaultSlogan){
                     setTyping(false);
+                    setprocessSlogan(defaultSlogan.split(''))
                 }
-                const letters = processSlogan.shift();
-                setprocessSlogan(processSlogan)
-                const slogan_ = slogan + letters
-                setSlogan(slogan_);
+                else{
+                    const letters = processSlogan.shift();
+                    // console.log(letters)
+                    setprocessSlogan(processSlogan)
+                    const slogan_ = slogan + letters
+                    setSlogan(slogan_);
+                }
             }
         },100)
         return () => {

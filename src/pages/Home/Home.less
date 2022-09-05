@@ -2,7 +2,8 @@
     position: fixed;
     width: 25%;
     height: 100vh;
-    background-color: #E3E3E3;
+    background-color: #f0f0f0;
+    box-shadow: 3px 0px 15px 0px #30303077;
     .info{
         width: 100%;
         position: relative;
@@ -18,11 +19,81 @@
             box-shadow: 0px 7px 15px 0px #878787;
         }
         .name{
-            font-size: 2rem;
+            font-size: 2vw;
             font-weight: bold;
             color: #554d45;
             position: relative;
             top: 20px;
         }
+
+        .slogan{
+            animation: cursor 0.8s infinite;
+        }
+    }
+}
+.right{
+    .head{
+        display: flex;
+        align-items: center;
+        background-color: #eee;
+        box-shadow: 0px 3px 5px 0px #878787;
+        height: 80px;
+        padding: 0;
+        a{
+            font-size: 1.5vw;
+            font-weight: bolder;
+            position: relative;
+            display: block;
+            width: 150px;
+            height: 100%;
+            line-height: 80px;
+            box-sizing: content-box;
+            color: #333;
+            z-index: 10;
+            text-align: center;
+            transition: 1s;
+        }
+        a:hover{
+            width: 200px;
+            font-size: 2vw;
+            transition: 1s;
+            color: #eee;
+        }
+        a:hover::after{
+            top: 0px;
+            width: 200px;
+            transition: 1s;
+        }
+        a::after{
+            position: absolute;
+            transition: 1s;
+            top: -100%;
+            content: "";
+            display: block;
+            width: 150px;
+            height: 80px;
+            z-index: -1;
+            background-color: #3d3d3d;
+        }
+    }
+}
+.Content{
+    width: 100%;
+    height: 50vh;
+}
+
+@keyframes cursor{
+    0%{
+        border-right: 2px solid #575757;
+    }
+    40%{
+        border-right: 2px solid #575757;
+    }
+    60%{
+        border-right: 2px solid rgba(255, 255, 255, 0);
+    }
+    100%{
+        border-right: 2px solid rgba(255, 255, 255, 0);
+
     }
 }
