@@ -12,7 +12,7 @@ function LeftContainer() {
 
     const [slogan, setSlogan] = useState(defaultSlogan);
 
-    const [processSlogan,setprocessSlogan] = useState(defaultSlogan.split(''));
+    const [processSlogan,setProcessSlogan] = useState(defaultSlogan.split(''));
 
     useEffect(() => {
         let deleting,spelling
@@ -32,15 +32,14 @@ function LeftContainer() {
         },50)
         spelling = setInterval(()=>{
             if(typing){
-                console.log(slogan)
                 if(slogan === defaultSlogan){
                     setTyping(false);
-                    setprocessSlogan(defaultSlogan.split(''))
+                    setProcessSlogan(defaultSlogan.split(''))
                 }
                 else{
                     const letters = processSlogan.shift();
                     // console.log(letters)
-                    setprocessSlogan(processSlogan)
+                    setProcessSlogan(processSlogan)
                     const slogan_ = slogan + letters
                     setSlogan(slogan_);
                 }

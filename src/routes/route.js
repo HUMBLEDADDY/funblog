@@ -20,7 +20,7 @@ const routesConfig = [
                 element: <Date/>
             },
             {
-                path:'/categories',
+                path:'/category',
                 element: <Category/>
             }
         ]
