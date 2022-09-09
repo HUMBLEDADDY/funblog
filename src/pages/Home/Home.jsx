@@ -12,7 +12,7 @@ function Home() {
     return(
         <div>
             <Layout>
-                <Sider width="25vw" className={styles['sider']}>
+                <Sider width="25%" className={styles['sider']}>
                     <LeftContainer></LeftContainer>
                 </Sider>
                 <Layout  className={styles['right']}>

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import ArticleBox from "../../components/ArticleBox.jsx/ArticleBox";
 import Article from "../../components/Article/Article";
+import styles from "./Category.less"
 
 function Category() {
     const [articleTree,setArticleTree] = useState([
@@ -12,18 +13,15 @@ function Category() {
         <div>
             {
                 articleTree.map((category,idx)=>(
-                    <ArticleBox key={idx} name={category.name}>
+                    <ArticleBox key={idx} className={styles['article-box']} name={category.name}>
                         {
                             category.articles.map((article,idx)=>(
-                                <Article key={idx} title={article}></Article>
+                                <Article key={idx} title={article}>111</Article>
                             ))
                         }
                     </ArticleBox>
                 ))
             }
-            <ArticleBox>
-
-            </ArticleBox>
         </div>
     )
 }
