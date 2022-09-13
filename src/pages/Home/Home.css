@@ -5,7 +5,7 @@
   height: 100vh;
   background-color: #f0f0f0;
   box-shadow: 3px 0px 15px 0px #30303077;
-  z-index: 999;
+  z-index: 9999;
 }
 .left-container .info {
   width: 100%;
@@ -110,6 +110,7 @@
   left: 25vw;
   height: 40px;
   text-align: center;
+  z-index: 999;
   line-height: 40px;
 }
 @keyframes cursor {

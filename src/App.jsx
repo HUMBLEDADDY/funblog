@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+import './App.less';
 import GetRoutes from './routes/route'
 import {BrowserRouter} from 'react-router-dom'
 import "antd/dist/antd.min.css";

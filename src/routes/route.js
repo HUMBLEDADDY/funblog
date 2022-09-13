@@ -1,6 +1,7 @@
 import Home from '../pages/Home/Home'
 import Main from '../pages/Main/Main'
 import Date from '../pages/Date/Date'
+import Article from '../pages/Article/Article'
 import Category from '../pages/Category/Category'
 
 
@@ -22,6 +23,10 @@ const routesConfig = [
             {
                 path:'/category',
                 element: <Category/>
+            },
+            {
+                path:'/article/',
+                element: <Article/>
             }
         ]
     }
